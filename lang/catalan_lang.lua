@@ -29,9 +29,9 @@ local function run(msg, matches)
 		-------------
 
 		-- global plugins --
-		set_text(LANG, 'require_sudo', 'Aquest plugin requereix permissos de sudo')
-		set_text(LANG, 'require_admin', 'Aquest plugin requereix permissos administrador o superior')
-		set_text(LANG, 'require_mod', 'Aquest plugin requereix permissos mod o superior')
+		set_text(LANG, 'require_sudo', 'Aquest plugin requereix permisos de sudo')
+		set_text(LANG, 'require_admin', 'Aquest plugin requereix permisos administrador o superior')
+		set_text(LANG, 'require_mod', 'Aquest plugin requereix permisos mod o superior')
 		
 		-- welcome.lua
 		set_text(LANG, 'weloff', 'Welcome enabled.')
@@ -146,23 +146,23 @@ local function run(msg, matches)
 		set_text(LANG, 'photoSaved', 'Foto guardada!')
 		set_text(LANG, 'photoFailed', 'Error, intenta de nou!')
 		set_text(LANG, 'setPhotoAborted', 'Parant el procés per establir foto...')
-		set_text(LANG, 'sendPhoto', 'Envia una foto siusplau')
+		set_text(LANG, 'sendPhoto', 'Envia una foto si us plau')
 
 		set_text(LANG, 'chatSetphoto', 'Ara tu pots establir foto en aquest xat.')
 		set_text(LANG, 'channelSetphoto', 'Ara tu pots establir foto en aquest canal.')
 		set_text(LANG, 'notChatSetphoto', 'Ara tu no pots establir foto en aquest xat.')
 		set_text(LANG, 'notChannelSetphoto', 'Ara tu no pots establir foto en aquest canal.')
-		set_text(LANG, 'setPhotoError', 'Siusplau, activa la configuració per establir foto (setphoto settings).')
+		set_text(LANG, 'setPhotoError', 'Si us plau, activa la configuració per establir foto (setphoto settings).')
 
 		set_text(LANG, 'linkSaved', 'El link ha estat guardat')
 		set_text(LANG, 'groupLink', 'Link del grup')
 		set_text(LANG, 'sGroupLink', 'Link del supergrup')
-		set_text(LANG, 'noLinkSet', 'No hi ha cap link establert. Siusplau, afegeix un amb #setlink [Link].')
+		set_text(LANG, 'noLinkSet', 'No hi ha cap link establert. Si us plau, afegeix un amb #setlink [Link].')
 
-		set_text(LANG, 'chatRename', 'Ara pots renombrar el xat.')
-		set_text(LANG, 'channelRename', 'Ara pots renombrar el supergrup.')
-		set_text(LANG, 'notChatRename', 'Ara no pots renombrar el xat.')
-		set_text(LANG, 'notChannelRename', 'Ara no pots renombrar el supergrup.')
+		set_text(LANG, 'chatRename', 'Ara pots reanomenar el xat.')
+		set_text(LANG, 'channelRename', 'Ara pots reanomenar el supergrup.')
+		set_text(LANG, 'notChatRename', 'Ara no pots reanomenar el xat.')
+		set_text(LANG, 'notChannelRename', 'Ara no pots reanomenar el supergrup.')
 
 		set_text(LANG, 'lockMembersT', 'El número de membres del xat ha estat bloquejat.')
 		set_text(LANG, 'lockMembersL', 'El número de membres del supergrup ha estat bloquejat.')
@@ -170,7 +170,7 @@ local function run(msg, matches)
 		set_text(LANG, 'notLockMembersT', 'El número de membres del xat ha estat desbloquejat.')
 		set_text(LANG, 'notLockMembersL', 'El número de membres del supergrup ha estat desbloquejat.')
 
-		set_text(LANG, 'langUpdated', 'La llengua ha estat cambiada a: ')
+		set_text(LANG, 'langUpdated', 'La llengua ha estat canviada a: ')
 		
 		set_text(LANG, 'chatUpgrade', 'Xat convertit en supergrup amb èxit.')
 		set_text(LANG, 'notInChann', 'Aquest xat ja és supergrup')
@@ -288,7 +288,7 @@ local function run(msg, matches)
 
 		-- export_gban.lua --
 		set_text(LANG, 'export_gban:0', 2)
-		set_text(LANG, 'export_gban:1', '#gbans installer: Retorna un arxiu lua instalador per a compartir gbans i afegir-ho a un altre bot amb una única ordre.')
+		set_text(LANG, 'export_gban:1', '#gbans installer: Retorna un arxiu lua instal·lador per a compartir gbans i afegir-ho a un altre bot amb una única ordre.')
 		set_text(LANG, 'export_gban:2', '#gbans list: Retorna un arxiu amb la llista de gbans.')
 
 		-- gban_installer.lua --
@@ -318,24 +318,24 @@ local function run(msg, matches)
 
 		-- moderation.lua --
 		set_text(LANG, 'moderation:0', 18)
-		set_text(LANG, 'moderation:1', '#add: responent un missatge, afegiras a aquest usuari al grup o supergrup actual.')
-		set_text(LANG, 'moderation:2', '#add <id>/<username>: afegeix a un usuari, per ID o alies, al grup o supergrup actual.')
-		set_text(LANG, 'moderation:3', '#kick: responent a un missatge, expulsará al membre del grup o supergrup actual.')
-		set_text(LANG, 'moderation:4', '#kick <id>/<username>: expulsa a un usuari, pel seu ID/alies del grup o supergrup actual.')
+		set_text(LANG, 'moderation:1', '#add: responent a un missatge, afegiràs aquest usuari al grup o supergrup actual.')
+		set_text(LANG, 'moderation:2', '#add <id>/<username>: afegeix un usuari, per ID o alies, al grup o supergrup actual.')
+		set_text(LANG, 'moderation:3', '#kick: responent a un missatge, expulsará el membre del grup o supergrup actual.')
+		set_text(LANG, 'moderation:4', '#kick <id>/<username>: expulsa un usuari, pel seu ID/alies del grup o supergrup actual.')
 		set_text(LANG, 'moderation:5', '#kickme: autokick.')
-		set_text(LANG, 'moderation:6', '#ban: responent un missatge, expulsarà i banejarà a aquest usuari del grup o supergrup actual.')
-		set_text(LANG, 'moderation:7', '#ban <id>/<username>: expulsa i baneja a un usuari pel seu ID/alies, impedint-ne el seu retorn.')
-		set_text(LANG, 'moderation:8', '#unban: responent a un missatge, desbaneja a aquest usuari del grup o supergrup.')
-		set_text(LANG, 'moderation:9', '#unban <id>/<username>: desbaneja al membre pel seu ID/alies del grup o supergrup.')
+		set_text(LANG, 'moderation:6', '#ban: responent a un missatge, expulsarà i banejarà aquest usuari del grup o supergrup actual.')
+		set_text(LANG, 'moderation:7', '#ban <id>/<username>: expulsa i baneja un usuari pel seu ID/alies, impedint-ne el seu retorn.')
+		set_text(LANG, 'moderation:8', '#unban: responent a un missatge, desbaneja aquest usuari del grup o supergrup.')
+		set_text(LANG, 'moderation:9', '#unban <id>/<username>: desbaneja el membre pel seu ID/alies del grup o supergrup.')
 		set_text(LANG, 'moderation:10', '#gban: responent a un missatge, el membre serà banejat de tots els grups i supergrups.')
-		set_text(LANG, 'moderation:11', '#gban <id>/<username>: expulsa i baneja al membre, pel seu ID/ales de tots els grups o supergrups impedint-ne el retorn.')
+		set_text(LANG, 'moderation:11', '#gban <id>/<username>: expulsa i baneja el membre, pel seu ID/ales de tots els grups o supergrups impedint-ne el retorn.')
 		set_text(LANG, 'moderation:12', '#ungban: responent a un missatge, el membre serà desbanejat de tots els grups i supergrups.')
 		set_text(LANG, 'moderation:13', '#ungban <id>/<username>: treu el ban al membre, pel seu ID/alies de tots els grups i supergrups.')
-		set_text(LANG, 'moderation:14', '#mute: responent a un missatge silencia al membre eliminant els missatges del supergrup actual.')
-		set_text(LANG, 'moderation:15', '#mute <id>/<username>: silencia a un membre, pel seu ID/alies, eliminant els seus missatges al supergrup actual.')
-		set_text(LANG, 'moderation:16', '#unmute: respondent a un missatge, treu el silenci al membre.')
+		set_text(LANG, 'moderation:14', '#mute: responent a un missatge silencia el membre eliminant els missatges del supergrup actual.')
+		set_text(LANG, 'moderation:15', '#mute <id>/<username>: silencia un membre, pel seu ID/alies, eliminant els seus missatges al supergrup actual.')
+		set_text(LANG, 'moderation:16', '#unmute: responent a un missatge, treu el silenci al membre.')
 		set_text(LANG, 'moderation:17', '#unmute <id>/<username>: treu el silenci al membre, pel seu ID/alies, al supergrup actual.')
-		set_text(LANG, 'moderation:18', '#rem: responent a un missatge, aquest missatge serà borrat.')
+		set_text(LANG, 'moderation:18', '#rem: responent a un missatge, aquest missatge serà esborrat.')
 		
 		-- settings.lua --
 	    set_text(LANG, 'settings:0', 20)
@@ -358,7 +358,7 @@ local function run(msg, matches)
 	    set_text(LANG, 'settings:17', '#lang <language (en, es...)>: canvia la llengua del bot.')
 	    set_text(LANG, 'settings:18', '#setlink <link>: guarda el link del grup.')
 	    set_text(LANG, 'settings:19', '#link: mostra el link del grup.')
-		set_text(LANG, 'settings:20', '#settings tgservices enable/disable: Borra els missatges de Telegram de nou participant al grup quan estigui actiu.')
+		set_text(LANG, 'settings:20', '#settings tgservices enable/disable: esborra els missatges de Telegram del nou participant del grup quan estigui actiu.')
 		
 		-- plugins.lua --
 		set_text(LANG, 'plugins:0', 4)
